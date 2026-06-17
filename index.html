@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://nesettodigital.no/" />
   <title>Nesetto Digital</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -95,7 +96,8 @@
       font-weight: 700;
       margin-bottom: 16px;
     }
-    .app-section-text h2 span { color: #e94560; }
+    .app-section-text h2 span.red { color: #e94560; }
+    .app-section-text h2 span.green { color: #27ae60; }
     .app-section-text p {
       color: #aaaaaa;
       font-size: 16px;
@@ -112,20 +114,39 @@
       margin-bottom: 10px;
       padding-left: 4px;
     }
-    .feature-list li::before {
-      content: '🔴 ';
-    }
+    .feature-list.red li::before { content: '🔴 '; }
+    .feature-list.green li::before { content: '✅ '; }
+
     .app-icon {
       width: 140px;
       height: 140px;
-      background-color: #e94560;
       border-radius: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 64px;
       flex-shrink: 0;
+    }
+    .app-icon.pushfeud {
+      background-color: #e94560;
       box-shadow: 0 0 60px rgba(233, 69, 96, 0.4);
+    }
+    .app-icon.ordnet {
+      background-color: #27ae60;
+      box-shadow: 0 0 60px rgba(39, 174, 96, 0.4);
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+      background-color: #2a2a3e;
+      color: #27ae60;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
     }
 
     /* DIVIDER */
@@ -184,7 +205,8 @@
   <header>
     <div class="logo">Nesetto<span>.</span>Digital</div>
     <nav>
-      <a href="#app">App</a>
+      <a href="#pushfeud">Pushfeud</a>
+      <a href="#ordnet">Ordnet</a>
       <a href="#about">About</a>
       <a href="privacy.html">Privacy</a>
       <a href="mailto:pushfeud@gmail.com">Contact</a>
@@ -205,10 +227,10 @@
 
   <hr class="divider" />
 
-  <section class="app-section" id="app">
-    <div class="app-icon">🔴</div>
+  <section class="app-section" id="pushfeud">
+    <div class="app-icon pushfeud">🔴</div>
     <div class="app-section-text">
-      <h2>Meet <span>Pushfeud</span></h2>
+      <h2>Meet <span class="red">Pushfeud</span></h2>
       <p>
         Every day you get one chance to press the button. Miss a day and your streak is gone.
         Simple, addictive, and surprisingly hard to keep up.
@@ -217,12 +239,36 @@
         Challenge your friends, build shared streaks, and compete on the global leaderboard
         in the Timer Game.
       </p>
-      <ul class="feature-list">
+      <ul class="feature-list red">
         <li>Daily streak tracking</li>
         <li>Friend streaks &amp; social features</li>
         <li>Timer Game with global leaderboard</li>
         <li>Chat with friends</li>
         <li>Push notifications so you never miss a day</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="app-section" id="ordnet">
+    <div class="app-icon ordnet">✅</div>
+    <div class="app-section-text">
+      <div class="coming-soon-badge">Coming soon</div>
+      <h2>Meet <span class="green">Ordnet</span></h2>
+      <p>
+        The simplest list app you'll ever use. Add items, check them off, and they're gone.
+        Share lists with family and friends — everyone can add and check off together.
+      </p>
+      <p>
+        Shopping lists, packing lists, guest lists — whatever you need to get organised.
+      </p>
+      <ul class="feature-list green">
+        <li>Simple, distraction-free lists</li>
+        <li>Shared lists with family and friends</li>
+        <li>Shopping, packing and guest list modes</li>
+        <li>See who checked off what</li>
+        <li>Sign in with Apple or Google</li>
       </ul>
     </div>
   </section>
@@ -239,7 +285,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Nesetto Digital. All rights reserved.</p>
+    <p>&copy; 2026 Nesetto Digital. All rights reserved.</p>
     <div>
       <a href="privacy.html">Privacy Policy</a>
       <a href="mailto:pushfeud@gmail.com">Contact</a>
