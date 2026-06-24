@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://nesettodigital.no/privacy-hub.html" />
+  <title>Privacy – Nesetto Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2a2a3e;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    .logo span { color: #e94560; }
+    nav a {
+      color: #aaaaaa;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 15px;
+    }
+    nav a:hover { color: #ffffff; }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      color: #aaaaaa;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 60px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      display: block;
+      background-color: #12122a;
+      border: 1px solid #2a2a3e;
+      border-radius: 20px;
+      padding: 40px 32px;
+      width: 280px;
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.15s;
+      text-align: left;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+    }
+    .card.pushfeud:hover { border-color: #e94560; }
+    .card.ordnet:hover   { border-color: #27ae60; }
+
+    .card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .card.pushfeud .card-icon { background-color: #e94560; }
+    .card.ordnet   .card-icon { background-color: #27ae60; }
+
+    .card-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .card-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .card.pushfeud .card-link { color: #e94560; }
+    .card.ordnet   .card-link { color: #27ae60; }
+
+    footer {
+      border-top: 1px solid #2a2a3e;
+      padding: 32px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer p { color: #555555; font-size: 14px; }
+    footer a { color: #aaaaaa; text-decoration: none; font-size: 14px; margin-left: 20px; }
+    footer a:hover { color: #ffffff; }
+
+    @media (max-width: 640px) {
+      header { padding: 20px; }
+      h1 { font-size: 28px; }
+      .cards { flex-direction: column; align-items: center; }
+      .card { width: 100%; }
+      footer { flex-direction: column; text-align: center; }
+      footer a { margin-left: 0; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Nesetto<span>.</span>Digital</a>
+    <nav>
+      <a href="index.html#pushfeud">Pushfeud</a>
+      <a href="index.html#ordnet">Ordnet</a>
+      <a href="index.html#about">About</a>
+      <a href="privacy-hub.html">Privacy</a>
+      <a href="mailto:pushfeud@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Privacy Policies</h1>
+    <p class="subtitle">
+      Select an app below to read its privacy policy.
+    </p>
+
+    <div class="cards">
+      <a class="card pushfeud" href="privacy.html">
+        <div class="card-icon">🔴</div>
+        <div class="card-name">Pushfeud</div>
+        <div class="card-desc">Daily streak game with friends, chat, and leaderboards.</div>
+        <div class="card-link">Read privacy policy →</div>
+      </a>
+
+      <a class="card ordnet" href="ordnet-privacy.html">
+        <div class="card-icon">✅</div>
+        <div class="card-name">Ordnet</div>
+        <div class="card-desc">Simple shared lists for shopping, packing, and reminders.</div>
+        <div class="card-link">Read privacy policy →</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Nesetto Digital. All rights reserved.</p>
+    <div>
+      <a href="privacy-hub.html">Privacy</a>
+      <a href="mailto:pushfeud@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
