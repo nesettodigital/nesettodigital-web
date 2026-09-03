@@ -98,6 +98,7 @@
     }
     .app-section-text h2 span.red { color: #e94560; }
     .app-section-text h2 span.green { color: #27ae60; }
+    .app-section-text h2 span.teal { color: #14b8a6; }
     .app-section-text p {
       color: #aaaaaa;
       font-size: 16px;
@@ -116,6 +117,7 @@
     }
     .feature-list.red li::before { content: '🔴 '; }
     .feature-list.green li::before { content: '✅ '; }
+    .feature-list.teal li::before { content: '🏃 '; }
 
     .app-icon {
       width: 140px;
@@ -134,6 +136,10 @@
     .app-icon.ordnet {
       background-color: #27ae60;
       box-shadow: 0 0 60px rgba(39, 174, 96, 0.4);
+    }
+    .app-icon.pushpace {
+      background-color: #14b8a6;
+      box-shadow: 0 0 60px rgba(20, 184, 166, 0.4);
     }
 
     .coming-soon-badge {
@@ -207,6 +213,7 @@
     <nav>
       <a href="#pushfeud">Pushfeud</a>
       <a href="#ordnet">Ordnet</a>
+      <a href="#pushpace">PushPace</a>
       <a href="#about">About</a>
       <a href="privacy-hub.html">Privacy</a>
       <a href="mailto:pushfeud@gmail.com">Contact</a>
@@ -268,6 +275,32 @@
         <li>Shopping, packing, guest and reminder list modes</li>
         <li>Reminders with notifications</li>
         <li>Sign in with Apple or Google</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="app-section" id="pushpace">
+    <div class="app-icon pushpace">⏩</div>
+    <div class="app-section-text">
+      <span class="coming-soon-badge">Coming soon</span>
+      <h2>Meet <span class="teal">PushPace</span></h2>
+      <p>
+        A free interval timer for running, treadmill and HIIT training — with no
+        locked features and no subscription. The essentials other timers charge
+        for, free for everyone.
+      </p>
+      <p>
+        Build any workout, hear every change spoken out loud, and keep track of
+        the miles on your running shoes.
+      </p>
+      <ul class="feature-list teal">
+        <li>Unlimited custom interval workouts</li>
+        <li>Ready-made templates: Tabata, HIIT, 4x4 and EMOM</li>
+        <li>Voice cues that duck your music instead of stopping it</li>
+        <li>Target speed and incline per interval</li>
+        <li>Running-shoe mileage log</li>
       </ul>
     </div>
   </section>
