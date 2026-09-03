@@ -38,7 +38,7 @@
     nav a:hover { color: #ffffff; }
 
     .content {
-      max-width: 760px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 80px 24px 100px;
       text-align: center;
@@ -67,7 +67,7 @@
       border: 1px solid #2a2a3e;
       border-radius: 20px;
       padding: 40px 32px;
-      width: 280px;
+      width: 240px;
       text-decoration: none;
       transition: border-color 0.2s, transform 0.15s;
       text-align: left;
@@ -75,9 +75,10 @@
     .card:hover {
       transform: translateY(-3px);
     }
-    .card.pushfeud:hover { border-color: #e94560; }
-    .card.ordnet:hover   { border-color: #27ae60; }
-    .card.pushpace:hover { border-color: #17b890; }
+    .card.pushfeud:hover  { border-color: #e94560; }
+    .card.ordnet:hover    { border-color: #27ae60; }
+    .card.pushdone:hover  { border-color: #3b82f6; }
+    .card.pushpace:hover  { border-color: #17b890; }
 
     .card-icon {
       width: 64px;
@@ -89,12 +90,13 @@
       font-size: 28px;
       margin-bottom: 20px;
     }
-    .card.pushfeud .card-icon { background-color: #e94560; }
-    .card.ordnet   .card-icon { background-color: #27ae60; }
-    .card.pushpace .card-icon { background-color: #0F6E56; }
+    .card.pushfeud .card-icon  { background-color: #e94560; }
+    .card.ordnet   .card-icon  { background-color: #27ae60; }
+    .card.pushdone .card-icon  { background-color: #1d4ed8; }
+    .card.pushpace .card-icon  { background-color: #0F6E56; }
 
     .card-name {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 8px;
@@ -110,9 +112,10 @@
       font-size: 14px;
       font-weight: 600;
     }
-    .card.pushfeud .card-link { color: #e94560; }
-    .card.ordnet   .card-link { color: #27ae60; }
-    .card.pushpace .card-link { color: #17b890; }
+    .card.pushfeud .card-link  { color: #e94560; }
+    .card.ordnet   .card-link  { color: #27ae60; }
+    .card.pushdone .card-link  { color: #3b82f6; }
+    .card.pushpace .card-link  { color: #17b890; }
 
     footer {
       border-top: 1px solid #2a2a3e;
@@ -168,6 +171,13 @@
         <div class="card-icon">✅</div>
         <div class="card-name">Ordnet</div>
         <div class="card-desc">Simple shared lists for shopping, packing, and reminders.</div>
+        <div class="card-link">Read privacy policy →</div>
+      </a>
+
+      <a class="card pushdone" href="pushdone-privacy.html">
+        <div class="card-icon">✓</div>
+        <div class="card-name">PushDone</div>
+        <div class="card-desc">Lists and checklists, shared in real time.</div>
         <div class="card-link">Read privacy policy →</div>
       </a>
 
