@@ -23,7 +23,7 @@
     "alternateName": "PushPace",
     "operatingSystem": "iOS",
     "applicationCategory": "HealthApplication",
-    "description": "A free interval timer for running, treadmill and HIIT training. Unlimited custom interval workouts, templates for Tabata, HIIT 30/30, 4x4 and EMOM, spoken voice cues that duck your music and keep playing with the screen locked, target speed and incline per interval, distance tracking and a running-shoe mileage log. No account and no subscription.",
+    "description": "A free interval timer for running, treadmill and HIIT training. Unlimited custom interval workouts, templates for Tabata, HIIT 30/30, 4x4 and EMOM, named exercises for kettlebell and dumbbell circuits, spoken voice cues that duck your music and keep playing with the screen locked, target speed and incline per interval, distance tracking and a running-shoe mileage log. No account and no subscription.",
     "url": "https://nesettodigital.no/pushpace.html",
     "downloadUrl": "https://apps.apple.com/app/id6788536283",
     "image": "https://nesettodigital.no/pushpace-icon.png",
@@ -184,6 +184,17 @@
     td:last-child { white-space: nowrap; }
     td { color: var(--soft); }
 
+    /* STRENGTH / EMOM */
+    .strength { display: flex; gap: 48px; align-items: center; }
+    .strength-shot { flex-shrink: 0; width: 340px; max-width: 100%; height: auto; border-radius: 20px; display: block; box-shadow: 0 0 60px rgba(61,122,18,0.3); }
+    .strength-text { flex: 1; min-width: 0; }
+    .strength-text p { color: var(--muted); font-size: 16px; margin-bottom: 16px; }
+    .circuit { background: var(--card); border-radius: 16px; padding: 22px 24px; }
+    .circuit h3 { font-size: 17px; margin-bottom: 4px; }
+    .circuit small { color: var(--muted); font-size: 14px; display: block; margin-bottom: 12px; }
+    .circuit ol { padding-left: 22px; color: var(--soft); font-size: 15px; }
+    .circuit li { margin-bottom: 4px; }
+
     /* FREE */
     .free { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .free div { background: var(--card); border-radius: 16px; padding: 22px; }
@@ -224,6 +235,8 @@
       .hero p.lead { margin-left: auto; margin-right: auto; }
       .pills { justify-content: center; }
       .who, .features, .free { grid-template-columns: 1fr; }
+      .strength { flex-direction: column; gap: 32px; }
+      .strength-shot { width: 100%; }
       table { min-width: 0; font-size: 14px; }
       th, td { padding: 12px 6px; }
       td:first-child { white-space: normal; }
@@ -300,7 +313,7 @@
         </div>
         <div>
           <h3>HIIT, Tabata and EMOM</h3>
-          <p>Start a classic format in one tap, or build your own with as many intervals and rounds as you like.</p>
+          <p>Start a classic format in one tap, or build a kettlebell or dumbbell circuit where every exercise is named and read aloud.</p>
         </div>
       </div>
     </section>
@@ -362,6 +375,36 @@
             <tr><td>EMOM 10</td><td>A new round every minute on the minute, 10 times</td><td>10 min</td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="block" id="strength">
+      <h2>Strength circuits and EMOM</h2>
+      <div class="strength">
+        <img class="strength-shot" src="pushpace-emom.webp" width="600" height="411" loading="lazy"
+             alt="PushPace during a kettlebell EMOM: 10 GOBLET SQUATS, 0:45 left, round 1 of 4, next: 10 kb rows" />
+        <div class="strength-text">
+          <p>
+            Give every interval the name of the exercise, reps included. PushPace shows it in
+            large type and says it out loud when the minute starts, so you never have to
+            remember what comes next. Finish early and the rest of the minute is your break.
+          </p>
+          <div class="circuit">
+            <h3>Example: Kettlebell EMOM</h3>
+            <small>2 min warm-up, 4 rounds, 2 min cool-down. 32 minutes in total.</small>
+            <ol>
+              <li>12 kettlebell swings</li>
+              <li>8 push-ups</li>
+              <li>10 goblet squats</li>
+              <li>10 kettlebell rows</li>
+              <li>16 reverse lunges</li>
+              <li>30 sec plank</li>
+              <li>1 min rest before the next round</li>
+            </ol>
+          </div>
+        </div>
       </div>
     </section>
 
